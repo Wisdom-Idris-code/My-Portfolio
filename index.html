@@ -2304,6 +2304,9 @@
           <div class="reveal reveal-delay-1">
             <form id="contact-form" class="contact-form"
                   aria-label="Contact form"
+                  action="mailto:wisdom.idris07@gmail.com"
+                  method="POST"
+                  enctype="text/plain"
                   novalidate>
 
               <div class="form-group">
@@ -2662,18 +2665,12 @@
         return;
       }
 
-      // Simulate sending (replace with real API call)
-      const submitBtn = contactForm.querySelector('[type="submit"]');
-      submitBtn.disabled = true;
-      submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+      const subjectText = document.getElementById('subject').value.trim() || 'New message from portfolio';
+      const bodyText = `Name: ${name}\nEmail: ${email}\n\n${document.getElementById('message').value.trim()}`;
+      const mailtoLink = `mailto:wisdom.idris07@gmail.com?subject=${encodeURIComponent(subjectText)}&body=${encodeURIComponent(bodyText)}`;
 
-      // Simulate network delay
-      await new Promise(resolve => setTimeout(resolve, 1500));
-
-      showFormStatus('success', '✓ Message sent! I\'ll get back to you within 24 hours.');
-      contactForm.reset();
-      submitBtn.disabled = false;
-      submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+      showFormStatus('success', '✓ Opening your email client...');
+      window.location.href = mailtoLink;
     });
 
     function showFormStatus(type, message) {
