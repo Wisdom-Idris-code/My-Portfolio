@@ -1,4 +1,7 @@
-# Idrissa Kargbo — Software Engineer Portfolio
+# Wisdom Idris — Software Engineer Portfolio
+
+## Overview
+![Portfolio](screenshot.png)
 
 [![Deploy Status](https://img.shields.io/badge/status-live-brightgreen)](https://idrissa.dev)
 [![Lighthouse](https://img.shields.io/badge/Lighthouse-100%2F100-success)](https://idrissa.dev)
@@ -6,7 +9,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 > A world-class portfolio built to win internships, freelance clients, and junior engineering roles.
-> Live at: **[idrissa.dev](https://idrissa.dev)**
+> Live at: **[wisdom.dev](https://wisdom.dev)**
 
 ---
 
@@ -28,20 +31,20 @@
 
 ### Option 1: GitHub Pages (Recommended — free, instant)
 ```bash
-# 1. Create a repo named: idrissa-kargbo.github.io
+# 1. Create a repo named: wisdom-idris.github.io
 # 2. Push index.html to the main branch
 git init
 git add .
 git commit -m "feat: launch portfolio"
-git remote add origin https://github.com/idrissa-kargbo/idrissa-kargbo.github.io.git
+git remote add origin https://github.com/wisdom-idris/github.io.git
 git push -u origin main
-# Live at: https://idrissa-kargbo.github.io
+# Live at: https://wisdom-idris.github.io
 ```
 
 ### Option 2: Netlify Drop (Fastest — no CLI needed)
 ```
 1. Go to https://app.netlify.com/drop
-2. Drag the entire idrissa-portfolio/ folder onto the page
+2. Drag the entire wisdom-portfolio/ folder onto the page
 3. Live in seconds with a *.netlify.app URL
 4. Connect a custom domain for free
 ```
@@ -49,7 +52,7 @@ git push -u origin main
 ### Option 3: Vercel (Best for future React version)
 ```bash
 npm i -g vercel
-cd idrissa-portfolio
+cd wisdom-portfolio
 vercel --prod
 # Follow prompts — live in 30 seconds
 ```
@@ -78,7 +81,7 @@ The blinking cursor + typewriter in the hero is not decorative — it's the firs
 ## 🏗️ Architecture
 
 ```
-idrissa-portfolio/
+wisdom-portfolio/
 │
 ├── index.html          # Complete portfolio (single-file, zero build step)
 ├── README.md           # This file
@@ -118,10 +121,10 @@ Search and replace these placeholders in `index.html`:
 
 | Placeholder | Replace with |
 |---|---|
-| `idrissa@email.com` | Your real email |
-| `idrissa-kargbo` (GitHub) | Your GitHub username |
-| `idrissa-kargbo` (LinkedIn) | Your LinkedIn slug |
-| `idrissa.dev` | Your domain |
+| `wisdom@email.com` | Your real email |
+| `wisdom-idris` (GitHub) | Your GitHub username |
+| `wisdom-wisdom` (LinkedIn) | Your LinkedIn slug |
+| `wisdom.dev` | Your domain |
 
 ### 2. Add your real projects
 Each project card lives in the `#projects` section. Copy the template:
@@ -261,4 +264,4 @@ MIT — use this as a template and make it yours.
 
 ---
 
-*Built by Idrissa Kargbo · 2025*
+*Built by Wisdom Idris · 2026*
